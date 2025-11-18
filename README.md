@@ -22,3 +22,13 @@ export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 pip3 install pdf2docx PyMuPDF python-docx pypdf requests
 
 
+ python3 main.py your.pdf
+ pdfがwordで開けるように変換される。ただし表示崩れる
+
+ python3 image.py your.pdf
+ pdfのページごとにpngに変換される（ページごとに個別にocrするための準備）
+
+ python3 image_ocr.py 対象ディレクトリ/対象.png
+ llmがocrしてマークダウンに変換する
+
+-> LLMにコンテキストを渡して作図なり要件のまとめを行う
