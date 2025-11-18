@@ -11,7 +11,7 @@ ca-certificates.conf
 
 sudo update-ca-certificates
 
-export OPENROUTER_API_KEY="your-api-key"
+export OPENROUTER_API_KEY="your-api-key" \n
 TODO
 your-api-keyはOpenRouterのKey -> createKey自分で用意すること。金額設定は０ドルでよい
 
